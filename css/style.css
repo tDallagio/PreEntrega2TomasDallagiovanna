@@ -1,472 +1,490 @@
-*{
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    box-sizing: border-box;
-    list-style: none;
+.discount {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  color: black;
+  background-color: white;
 }
 
-.header{
-    background-color: black;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 0px 210px;
-    z-index: 4;
+.shoppingArticle {
+  background-color: rgb(61, 58, 58);
+  padding: 30px;
+  color: white;
+}
+.shoppingArticle .shopping {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.shoppingArticle .shopping .shoppingItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.shoppingArticle .shopping .shoppingItem p {
+  color: solid black;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+.shoppingArticle .shopping .shoppingItem img {
+  width: 180px;
+  height: 150px;
 }
 
-.headerNav{
+.featuredTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.featuredProducts {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.featuredProducts .featuredItem {
+  text-align: center;
+}
+.featuredProducts img {
+  width: 220px;
+  height: 220px;
+}
+
+.bodyShop {
+  background-color: gainsboro;
+}
+.bodyShop a {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  color: black;
+}
+
+.shopFilters {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 70px;
+  padding-left: 25px;
+}
+.shopFilters ul {
+  padding-top: 45px;
+}
+.shopFilters ul h5 {
+  font-weight: 900;
+}
+.shopFilters ul a li {
+  font-size: 15px;
+}
+.shopFilters ul a li:hover {
+  color: gray;
+}
+
+.containerSectionShop {
+  display: flex;
+  align-items: start;
+}
+
+.containerallProducts {
+  display: flex;
+  justify-content: start;
+  margin-left: 55px;
+}
+.containerallProducts .allProducts h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.containerArticle {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+.containerArticle .shopFeaturedProducts {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  background-color: white;
+  padding: 10px;
+}
+.containerArticle .shopFeaturedProducts hr {
+  width: 100%;
+}
+.containerArticle .shopFeaturedProducts div {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.containerArticle .shopFeaturedProducts .shopFeaturedItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.containerArticle .shopFeaturedProducts .shopFeaturedItem img {
+  width: 170px;
+  height: 170px;
+}
+.containerArticle .shopFeaturedProducts .shopFeaturedItem .infoItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+@media screen and (max-width: 500px) {
+  .shopFilters {
+    display: none;
+  }
+  .shopFeaturedItem {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    justify-content:space-between;
-    text-transform: uppercase;
-    transition: .5s, color .10s;
-    -webkit-transition: .5s, color .10s;
-    -moz-transition: .5s, color .10s;
-    box-shadow: 0px 6px 10px 0 rgba(0,0,0,.1);
-}
-
-.headerNavMobile{
+    flex-direction: column !important;
+  }
+  .shopFeaturedItem .infoItem div {
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-decoration: none;
-    justify-content:space-between;
-    text-transform: uppercase;
-    transition: .5s, color .10s;
-    -webkit-transition: .5s, color .10s;
-    -moz-transition: .5s, color .10s;
-    box-shadow: 0px 6px 10px 0 rgba(0,0,0,.1);
-    background-color: black;
+  }
+  .shopFeaturedProducts {
     margin: 0 auto;
-
-} 
-
-
-@media screen and (min-width:769px){
-    .headerNavMobile{
-        display: none;
-    } 
+  }
+}
+.articleLogin {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-@media screen and (max-width:768px){
-    .headerNav{
-        display: none;
-    }
-    .header{
-        padding: 0px;
-    }
+.containerLogin {
+  display: flex;
+  border: 1px solid gainsboro;
+  padding: 25px;
+  border-radius: 10px;
+  width: auto;
 }
 
-.menuBar li a:hover{
-    color: gray;
+.newCustomers {
+  display: flex;
+  border: 1px solid gainsboro;
+  padding: 25px;
+  border-radius: 10px;
+  width: auto;
+  margin-top: 30px;
 }
 
-.search{
-    width: 500px;
+.newCustomers ul {
+  padding-left: 0px;
+  padding-top: 30px;
 }
 
-h1{
-    font-size: 40px;
-    color: white;
-    top: 10px;
-    right: 10px;
-    margin: 0px;
+@media screen and (max-width: 558px) {
+  .articleLogin {
+    margin: 10px;
+  }
+}
+.articleCart {
+  background-color: gainsboro;
+}
+.articleCart h2 {
+  font-size: 40px;
+}
+.articleCart hr {
+  width: 60%;
+}
+.articleCart img {
+  width: 190px;
+  background-color: black;
+}
+.articleCart .containerCart {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 25px;
 }
 
-
-.headerNav li{
-    display: inline;
-    text-decoration-style: none;
-    color: solid white;
-    
+.allProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.menuBar{
-    margin: 0px;
+.bodyBrands {
+  background-color: gainsboro(211, 211, 211);
 }
 
-.menuBar a{
-    color: solid white;
-    text-decoration: none;
-    text-decoration-style:none;
-    list-style: none;
-    padding-right: 30px;
-    font-weight: 900;
+.brandTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-
-a{
-    text-decoration: none;
-    text-decoration-style:none;
-    list-style: none;
-    color:white;
-    font-size: 18px;
+.brandsIcons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 100px;
+}
+.brandsIcons img {
+  width: 200px;
+  height: 220px;
 }
 
-.logo{
-    margin: 0px;
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-.logo li{
-    padding: 5px;
+h1 {
+  font-size: 40px;
+  color: white;
+  top: 10px;
+  right: 10px;
+  margin: 0px;
 }
 
-.logo img {
-    width: 20px;
-    height: 20px;
+.header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0px 210px;
+  z-index: 4;
+}
+.header a {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  color: white;
+  font-size: 18px;
+}
+.header .navMobile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: black;
+  margin: 0 auto;
+}
+.header .headerNav {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.header .headerNav li {
+  display: inline;
+  text-decoration-style: none;
+  color: solid white;
+}
+.header .headerNav .search {
+  width: 500px;
+}
+.header .headerNav .menuBar {
+  margin: 0px;
+}
+.header .headerNav .menuBar a {
+  color: solid white;
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  padding-right: 30px;
+  font-weight: 900;
+}
+.header .headerNav .menuBar li a:hover {
+  color: gray;
+}
+.header .headerNav .logo {
+  margin: 0px;
+}
+.header .headerNav .logo li {
+  padding: 5px;
+}
+.header .headerNav .logo img {
+  width: 20px;
+  height: 20px;
+}
+.header .headerNav .logo img:hover {
+  width: 22px;
+  height: 22px;
 }
 
-.logo img:hover{
-    width: 22px;
-    height: 22px;
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: black;
+  box-sizing: border-box;
+  color: solid black;
+  padding-top: 100px;
 }
-
-
-.discount{
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    color: black;
-    background-color: white;
+.footer a {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  color: white;
+  font-size: 18px;
 }
-
-.banner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-    background-color: #f0f0f0;
-    z-index: -1;
+.footer .footerAccordion {
+  padding-top: 100px;
 }
-
-.banner img {
-    max-width: 100%;
-    max-height: 100%;
+.footer .footerAccordion .accordion-body {
+  background-color: black;
 }
-
-.banner .content {
-    position: absolute;
-    text-align: center;
-    color: #fff;
+.footer .footerAccordion .accordion-button {
+  background-color: black;
 }
-
-.banner h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+.footer .containerLogoEmail h3 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
-
-.banner p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.footer .Socials {
+  display: flex;
+  flex-direction: column;
 }
-
-.banner .boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 16px;
+.footer .Socials .logo {
+  margin: 0px;
 }
-
-.featuredTitle{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding: 20px;
+.footer .Socials .logo li {
+  padding: 5px;
 }
-
-.featuredProducts{
-    display: flex; 
-    justify-content: center;
-    margin: 100px;
+.footer .Socials .logo img {
+  width: 20px;
+  height: 20px;
 }
-
-.featuredProduct:hover div{
-    padding: 20px;
-    border: 1px solid gainsboro;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
+.footer .Socials .logo img:hover {
+  width: 22px;
+  height: 22px;
 }
-
-.featuredItems p{
-    display: flex; 
-    justify-content: center;
-    
-}
-
-.textItem{
-    text-align: center;
-}
-
-.featuredProducts img{
-    width: 220px;
-    height: 220px;
-    border: 1px solid gainsboro;
-    margin: 0px auto;
-}
-
-.shoppingArticle{
-    background-color: rgb(61, 58, 58);
-    padding: 30px;
-    color: white;
-}
-
-.shopping{
-    display: flex; 
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-}
-
-.shoppingItem{
-    display: flex; 
-    flex-direction:column;
-    justify-content: space-evenly;
-    margin: 25px;
-    padding: 20px;
-}
-
-.shoppingItem p{
-    display: flex;
-    justify-content: center;
-    color:solid black;
-    font-size: 15px;
-    font-weight: 900;
-    align-items: baseline;
-    text-align: center;
-}
-
-.shoppingItem img{
-    width: 180px;
-    height: 150px;
-}
-
-.footer{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    background-color: black;
-    box-sizing: border-box;
-    color: solid black;
-    padding-top: 100px;
-}
-
-.footerAccordion{
-    padding-top: 100px;
-}
-
-@media screen and (min-width:1300px){
-    .footerAccordion{
-        display: none;
-    }
-}
-
-@media screen and (max-width:1300px){
-    .containerAboutUs{
-        display: none;
-    }
-    .containerAccount{
-        display: none;
-    }
-    .containerHelp{
-        display: none;
-    }
-    .footerAccordion{
-        width: auto;
-    }
-    .footerSearch{
-        width: auto
-    }
-    .footer{
-        width: auto;
-    }
-}
-
-.accordion-button {
-    background-color: black; /* Cambia el color de fondo aquí */
-}
-
 .footer div ul li a {
-    font-size: 15px;
-    color: white;
+  font-size: 15px;
+  color: white;
+}
+.footer div ul li a:hover {
+  color: gray;
+  font-weight: 700;
+}
+.footer h2 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer h3 {
+  font-size: 20px;
+  color: white;
+}
+.footer li {
+  list-style: none;
+  text-decoration: none;
+}
+.footer .containerSocials {
+  padding-top: 100px;
+}
+.footer .containerSocials ul {
+  display: flex;
+  padding-left: 0px;
+}
+.footer .containerAccount ul {
+  padding-left: 0px;
+}
+.footer .containerAboutUs ul {
+  padding-left: 0px;
+}
+.footer .containerHelp ul {
+  padding-left: 0px;
+}
+.footer .containerAccount li {
+  padding-top: 30px;
+}
+.footer .containerAboutUs li {
+  padding-top: 30px;
+}
+.footer .containerHelp li {
+  padding-top: 30px;
 }
 
-.footer h2{
-    font-size: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  color: white;
 }
 
-.footer h3{
-    font-size: 20px;
-    color: white;
+@media screen and (min-width: 700px) {
+  .accordion-item {
+    width: 700px;
+  }
 }
-
-.footer li{
-    list-style: none;
-    text-decoration: none;
+@media screen and (min-width: 1000px) {
+  .header .navbar {
+    display: none;
+  }
 }
-
-.footer div ul li a:hover{
-    color: gray;
-    font-weight: 700;
+@media screen and (max-width: 999px) {
+  .header {
+    padding: 0px;
+  }
+  .header .headerNav {
+    display: none;
+  }
 }
-
-.containerLogoEmail h3{
-    margin-top: 40px;
-    font-size: 28px;
-    font-weight: 900;
-    text-transform: uppercase;
+@media screen and (min-width: 1300px) {
+  .footerAccordion {
+    display: none;
+  }
 }
-
-.Socials{
-    display: flex;
-    flex-direction: column;
-}
-    
-.containerSocials {
-    padding-top: 100px;
-}
-
-.containerSocials ul{
-    display: flex;
-    padding-left: 0px;
-}
-
-.containerAccount ul{
-    padding-left: 0px;
-}
-
-.containerAboutUs ul{
-    padding-left: 0px;
-}
-
-.containerHelp ul{
-    padding-left: 0px;
-}
-
-.containerAccount li{
-    padding-top: 30px;
-}
-
-.containerAboutUs li{
-    padding-top: 30px;
-}
-
-.containerHelp li{
-    padding-top: 30px;
-}
-
-.privacy{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
-    color: white;
-}
-
-/* cart page */
-
-.articleCart h2{
-    font-size: 40px;
-}
-
-.articleCart img{
-    width: 250px;
-}
-
-hr{
-    width: 90%;
-}
-
-.articleCart img{
-    background-color: black;
-}
-
-/* shop page */
-
-.short{
-    width: 10%;
-    
-}
-
-.allProducts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-/* brand page */
-
-.brandTitle{
-    margin-top: 100px;
-}
-
-.brandTitle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.brandsIcons{
-    display: flex;
-    justify-content: center; 
-    align-content: center;
-    margin-bottom: 500px;
-}
-
-.brandsIcons li p{
-    display: flex;
-    justify-content: center;
-}
-
-.brandsIcons img{
-    width: 250px;
-    height: 220px;
-}
-
-/* login page */
-
-.articleLogin{
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.containerLogin{
-    display: flex;
-    border: 1px solid gainsboro;
-    padding: 25px;
-    border-radius: 10px;
+@media screen and (max-width: 1300px) {
+  .containerAboutUs {
+    display: none;
+  }
+  .containerAccount {
+    display: none;
+  }
+  .containerHelp {
+    display: none;
+  }
+  .footerAccordion {
     width: auto;
-}
-.newCustomers{
-    display: flex;
-    border: 1px solid gainsboro;
-    padding: 25px;
-    border-radius: 10px;
+  }
+  .footerSearch {
     width: auto;
-    margin-top: 30px;
-}
-.newCustomers ul{
-    padding-left: 0px;
-    padding-top: 30px;
+  }
+  .footer {
+    width: auto;
+  }
 }
 
-@media screen and (max-width:558px){
-    .articleLogin{
-        margin: 10px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

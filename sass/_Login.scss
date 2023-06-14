@@ -1,0 +1,32 @@
+.articleLogin{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.containerLogin{
+    display: flex;
+    border: 1px solid gainsboro;
+    padding: 25px;
+    border-radius: 10px;
+    width: auto;
+}
+.newCustomers{
+    display: flex;
+    border: 1px solid gainsboro;
+    padding: 25px;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 30px;
+}
+.newCustomers ul{
+    padding-left: 0px;
+    padding-top: 30px;
+}
+
+@media screen and (max-width:558px){
+    .articleLogin{
+        margin: 10px;
+    }
+}

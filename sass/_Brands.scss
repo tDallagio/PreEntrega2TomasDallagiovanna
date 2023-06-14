@@ -1,0 +1,26 @@
+
+.bodyBrands{
+    background-color: gainsboro(211, 211, 211);
+}
+
+.brandTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.brandsIcons{
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    margin-bottom: 100px;
+    img{
+        width: 200px;
+        height: 220px;
+    }
+}
+
+
+

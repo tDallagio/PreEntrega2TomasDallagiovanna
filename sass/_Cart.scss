@@ -1,0 +1,28 @@
+.articleCart{
+    background-color: gainsboro;
+    h2{
+        font-size: 40px;
+    }
+    hr{
+        width: 60%;
+    }
+    img{
+        width: 190px;
+        background-color: black;
+    }
+    .containerCart{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 0 auto;
+        width: 70%;
+        padding-left: 25px;
+    }
+}
+
+.allProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
