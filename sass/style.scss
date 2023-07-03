@@ -107,7 +107,7 @@ h1{
     background-color: black;
     box-sizing: border-box;
     color: solid black;
-    padding-top: 100px;
+    padding-top: 50px;
 
     a{
         text-decoration: none;
@@ -119,12 +119,39 @@ h1{
 
     .footerAccordion{
         padding-top: 100px;
+
+        .colorBotton{
+            color: white;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
         .accordion-body{
             background-color: black;
+            ul{
+                padding: 0px;
+                li{
+                    display: flex;
+                    justify-content: start;
+                    padding-top: 5px;
+                    a{
+                        color: gray;
+                        font-weight: 100;
+                        font-size: small;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            
         }
+
         .accordion-button {
             background-color: black;
         }
+
+    
     }
 
     .containerLogoEmail{

@@ -6,6 +6,11 @@
     background-color: white;
 }
 
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
 .shoppingArticle{
     background-color: rgb(61, 58, 58);
     padding: 30px;
@@ -58,6 +63,21 @@
     }
 }
 
+@media (min-width:300px) and (max-width:768px){
+    .banner{
+        img{
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1440px){
+    .banner{
+        img{
+        width: 700px;
+        }
+    }
+}
 
 
 

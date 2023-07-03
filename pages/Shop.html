@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
     <!-- BOOTSTRAP LINK -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- STYLES LINK -->
@@ -22,8 +24,7 @@
                 <a href="../index.html"><h1>Protein Store</h1></a>
                 <ul class="menuBar">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="./Shop.html">Shop</a></li>
-                    <li><a href="#">Deals</a></li>  
+                    <li><a href="./Shop.html">Shop</a></li> 
                     <li><a href="./Brands.html">Brands</a></li>
                 </ul>
                 <form class="d-flex search" role="search">
@@ -69,6 +70,41 @@
     <main>
         <div class="containerallProducts">
         <div class="allProducts"><h2>ALL PRODUCTS</h2></div>
+        </div>
+        <div class="buttonContainer">
+        <button class="btn btn-primary buttonFilters" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">FILTERS</button>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">FILTERS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                <ul>
+                    <h5>BRANDS</h5>
+                        <a href="#"><li>Gnc</li></a>
+                        <a href="#"><li>Optimum nutrition</li></a>
+                        <a href="#"><li>Ghost</li></a>
+                        <a href="#"><li>Dymatize</li></a>
+                        <a href="#"><li>Isopure</li></a>
+                </ul>
+                <ul>
+                    <h5>FLAVORS</h5>
+                    <a href="#"><li>Chocolate</li></a>
+                    <a href="#"><li>Cookies and cream</li></a>    
+                    <a href="#"><li>Vanilla</li></a>
+                    <a href="#"><li>Strawberry</li></a>
+                    <a href="#"><li>Peanut butter</li></a>
+                </ul>
+                <ul>
+                    <h5>PRICE</h5>
+                    <a href="#"><li>Chocolate</li></a>
+                    <a href="#"><li>Cookies and cream</li></a>    
+                    <a href="#"><li>Vanilla</li></a>
+                    <a href="#"><li>Strawberry</li></a>
+                    <a href="#"><li>Peanut butter</li></a>
+                </ul>
+        </div>
         </div>
         <section class="containerSectionShop">
             <article class="shopArticle">
@@ -122,7 +158,7 @@
                             <div class="infoItem">
                                 <div>
                                     <p>GNC PRO Whey Protein</p>
-                                    <h4>$45.69</h4>
+                                    <h4>$45.99</h4>
                                     <button class="btn btn-outline-dark">ADD TO CART</button>
                                 </div>    
                             </div>
@@ -148,7 +184,7 @@
                             <div class="infoItem">
                                 <div>
                                     <p>Ghost Whey Protein</p>
-                                    <h4>$65.49</h4>
+                                    <h4>$65.99</h4>
                                     <button class="btn btn-outline-dark">ADD TO CART</button>
                                 </div>
                             </div>
@@ -187,7 +223,7 @@
                             <div class="infoItem">
                                 <div>
                                     <p>Sport Multivitamin</p>
-                                    <h4>$33.49</h4>
+                                    <h4>$33.99</h4>
                                     <button class="btn btn-outline-dark">ADD TO CART</button>
                                 </div>    
                             </div>
@@ -216,12 +252,12 @@
                 <h3>Sign up for email</h3>
                 <form class="d-flex search footerSearch " role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-dark" type="submit">Search</button>
+                    <button class="btn btn-dark" type="submit">Submit</button>
                 </form>
                 <div class="accordion footerAccordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                             Account
                             </ul>
                             </button>
@@ -237,26 +273,37 @@
                         </div>
                         </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                             About Protein Store
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                            <p></p>
+                            <ul class="">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">Price Match Guarantee</a></li>
+                                <li><a href="#">Satisfaction Guarantee</a></li>
+                            </ul>
                             </div>
                         </div>
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                             Need Help?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                            <p></p>
+                            <ul class="accordionContent">
+                                <li><a href="#">Contant Us</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Learning center</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
                             </div>
                         </div>
                     </div>

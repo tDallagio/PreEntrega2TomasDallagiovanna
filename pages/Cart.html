@@ -7,6 +7,8 @@
     <meta name="description" content="Welcome to the cart page of our protein store! Here, you can review the items in your cart, adjust quantities and proceed to checkout to complete your purchase.">
     <meta name="keywords" content="cart-page cart products purchase">
     <title>Cart</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +25,6 @@
                 <ul class="menuBar">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./Shop.html">Shop</a></li>
-                    <li><a href="#">Deals</a></li>  
                     <li><a href="./Brands.html">Brands</a></li>
                 </ul>
                 <form class="d-flex search" role="search">
@@ -69,24 +70,11 @@
     <main class="mainCart">
         <section class="sectionCart">
             <article class="articleCart">
-                <div class="containerCart column">
-                    <div><h2>CART</h2></div>
-                    <div class="itemsCart">
-                        <img src="https://cdn-fsly.yottaa.net/5b9fc7770b534475fab84e5b/www.gnc.com/v~4b.96/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwde71f3a5/hi-res/527942_web_GHOST_Vegan%20Pancake_Front.jpg?sw=350&sh=350&sm=fit&yocs=4_" alt="">
-                        <p>GHOST® Vegan Protein</p>
-                    </div>
-                    <hr>
-                    <div class="itemsCart">
-                        <img src="https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.95/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwa5ab61af/hi-res/509680_Pro_Performance_Creatine_100sv_Tub_Front.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_">
-                        <p>GNC PRO PERFORMANCE® Creatine Monohydrate</p>
-                    </div>
-                    <hr>
-                    <div class="itemsCart">
-                        <img src="https://cdn-fsly.yottaa.net/5b9fc7760b534475fab84ce9/www.gnc.com/v~4b.95/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dw6540deb3/hi-res/916091_1.jpg?sw=305&sh=305&sm=fit&yocs=19_1d_">
-                        <p>ISOPURE® Whey Protein Isolate</p>
-                    </div>
-                    <hr>
-                </div>    
+                <div class="emptyCart">
+                    <h2>Your Cart is Empty</h2>
+                    <h3><a href="./Shop.html">BACK TO SHOPPING</a></h3>
+                    <img src="https://cdn-fsly.yottaa.net/5b9fc7770b534475fab84e5b/www.gnc.com/v~4b.9d/on/demandware.static/Sites-GNC2-Site/-/default/dw36fbd5a9/images/svg-icons/cart-icon-redesign.svg?yocs=4_" alt="CART ICON">
+                </div>
             </article>
         </section>
     </main>
@@ -97,12 +85,12 @@
                 <h3>Sign up for email</h3>
                 <form class="d-flex search footerSearch " role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-dark" type="submit">Search</button>
+                    <button class="btn btn-dark" type="submit">Submit</button>
                 </form>
                 <div class="accordion footerAccordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                             Account
                             </ul>
                             </button>
@@ -118,26 +106,37 @@
                         </div>
                         </div>
                         <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                             About Protein Store
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                            <p></p>
+                            <ul class="">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">Price Match Guarantee</a></li>
+                                <li><a href="#">Satisfaction Guarantee</a></li>
+                            </ul>
                             </div>
                         </div>
                         </div>
                         <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <button class="accordion-button collapsed colorBotton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                             Need Help?
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                            <p></p>
+                            <ul class="accordionContent">
+                                <li><a href="#">Contant Us</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Learning center</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
                             </div>
                         </div>
                     </div>
